@@ -1,0 +1,591 @@
+html {
+  font-size: 5px;
+}
+@media only screen and (min-width:600px) {
+  html,
+  body {
+    font-size: 7px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  html,
+  body {
+    font-size: 10px;
+  }
+}
+@media only screen and (min-width:1800px) {
+  html,
+  body {
+    font-size: 14px;
+  }
+}
+@media only screen and (min-width:1800px) {
+  html,
+  body {
+    font-size: 14.5px;
+  }
+}
+p {
+  font-size: 1.3rem;
+}
+
+a {
+  font-size: 1.2rem;
+}
+
+button {
+  font-size: 1.1rem;
+}
+
+body {
+  font-family: "Avenir Next";
+  background-color: #ffffff;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+  font-size: 1.23rem;
+}
+
+.main {
+  max-width: 1920px;
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+  overflow: hidden;
+}
+
+.header {
+  overflow: hidden;
+  background-color: #ffffff;
+  color: rgb(58, 58, 58);
+  height: 90px;
+  max-width: 1920px;
+  width: 99%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.header-logo {
+  float: left;
+  font-size: 36px;
+  padding: 20px 40px;
+  letter-spacing: 0.05em;
+}
+
+.header-sub {
+  float: left;
+  font-size: 25px;
+  padding: 28px 20px;
+  letter-spacing: 0.05em;
+  padding-left: 0px;
+}
+
+.header a {
+  display: inline-block;
+  font-size: 20px;
+  text-decoration: none;
+  color: #3a3a3a;
+  padding: 20px 40px;
+  background-color: transparent;
+  border: 1px solid;
+  padding: 10px 18px;
+  
+  position: relative;
+  top: 22px;
+  left: 3%;
+}
+.header a:hover {
+  color: white;
+  border-color: gray;
+  background: #111;
+  transition: all 300ms 0s ease-in-out;
+}
+
+nav {
+  display: flex;
+  width: 100%;
+  background: rgba(17, 17, 17, 0.918);
+  position: sticky;
+  top: 0px;
+  z-index: 1024;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(24px);
+}
+
+nav ul {
+  text-align: center;
+  display: inline-flex;
+  overflow-x: auto;
+  width: 100%;
+  margin: 0;
+  padding: 3px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.07);
+  width: 98%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+nav li {
+  padding: 1.0rem 1.7rem;
+}
+
+a.tabs-button {
+  color: rgb(212 212 212);
+  text-decoration:none;
+  font-size: 1.3rem;
+
+  display: flex;
+  transition: all 300ms 0s ease-out;
+}
+a.tabs-button:hover {
+  color: rgba(255, 255, 255, 0.911);
+  text-decoration:none;
+
+  background: #39393b;
+  font-size: 1.4rem;
+  margin-bottom: 0.1em;
+}
+a.tabs-button.black {
+  color: rgba(105, 59, 59, 0.596);
+}
+a.tabs-button.black:hover {
+  background: #39393b;
+  box-shadow: 11px 0;
+}
+a.tabs-button.black:active {
+  color: rgba(255, 0, 0, 0.596);
+  background: #4b0000;
+  box-shadow: 11px 0;
+}
+
+.footer {
+  background-color: #868686dc;
+  color: #fff;
+  z-index: 10;
+  padding: 36px;
+  overflow-x: auto;
+}
+
+.footer-logo {
+  font-size: 32px;
+  float: left;
+}
+
+.footer-list {
+  float: left;
+  display: inline-flex;
+  margin: 0 0 0 1em;
+  width: 250px;
+}
+
+.footer-list ul {
+  display: inline-flex;
+  padding: 0px;
+  position: relative;
+  left: 3px;
+}
+
+.footer-list li {
+  padding-bottom: 20px;
+  border: 1px solid #aaa;
+  line-height: 120%;
+  margin: 0.2em;
+  padding: 0.5em;
+  text-align: center;
+  width: 8em; 
+
+  position:relative;
+  bottom:10px;
+  border-radius: 22px;
+}
+
+.circle-shap {
+  border-radius: 22px;
+}
+
+.text-background-circle {
+  background: lightgray;
+  padding: 0% 4%;
+  border-radius: 22px;
+}
+.text-background-circle.blue {
+  background: linear-gradient(to right, blue, rgb(43, 153, 255), aqua);
+  color: white;
+  cursor: pointer;
+}
+
+.box1 {
+  padding: 0.5em 1em;
+  margin: 2em 0;
+  font-weight: bold;
+  border: solid 3px #000000;
+}
+.box1 p {
+  margin: 0; 
+  padding: 0;
+}
+
+.box29 {
+    margin: 2.1em 0.5rem;
+    margin-bottom: 3em;
+    background: #f0f0f0;
+    text-align: center;
+}
+.box29 .box-title {
+    font-size: 1.2em;
+    background: #59aff5;
+    padding: 6px;
+    text-align: center;
+    color: #FFF;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+}
+.box29 p {
+    padding: 15px 150px;
+    margin: 0;
+}
+.box29 a {
+  margin: 0.1rem;
+}
+.box29 ol {
+  text-align: left;
+}
+
+.before-credo {
+  margin-top: .5rem;
+}
+.credo {
+    padding: 15px 20px;
+    margin: 0;
+    display: inline-block;
+    font-size: 1rem;
+}
+.credo li {
+  margin-bottom: .5rem;
+  text-align: left;
+  list-style: unset;
+}
+.credo.list-style-none li {
+  text-align: center;
+  list-style: none;
+}
+
+gray-out {
+  color: #646464;
+  font-size: 99%;
+}
+
+.box29.black {
+  background:#f0f0f0;
+  border: solid 2px #ffffff;
+}
+.box29.white {
+  background:#292929;
+  color: #ffffff;
+  border: solid 2px #ffffff;
+}
+.box29.wood {
+  background-image: url("木目模様2（茶色）.jpg");
+  background-color: rgba(0, 0, 0, 0.781);
+  background-blend-mode:lighten;
+  color: #ffffff;
+  border: solid 2px #ffffff;
+}
+
+.box29 .box-title--black {
+  font-size: 1.2em;
+  background: #222222;
+  padding: 6px;
+  text-align: center;
+  color: #FFF;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+}
+.box29 .box-title--blue {
+  font-size: 1.2em;
+  background: #001e57;
+  padding: 6px;
+  text-align: center;
+  color: #FFF;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+}
+.box29 .box-title--yellow {
+  font-size: 1.2em;
+  background: rgba(0, 0, 0, 0.103);
+  padding: 6px;
+  text-align: center;
+  color: rgb(255, 230, 0);
+  font-weight: bold;
+  letter-spacing: 0.05em;
+}
+.box29 .box-title--news {
+  font-size: 1.2em;
+  padding: 15px;
+  text-align: center;
+  color: #FFF;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+
+  background-color: #e74c3c;
+  animation: bg-color 10s infinite;
+  -webkit-animation: bg-color 10s infinite;
+}
+@-webkit-keyframes bg-color {
+  0% { background-color: #ffae95; }
+  20% { background-color: #a9f5ff; }
+  40% { background-color:#89d0ff; }
+  60% { background-color: #3498db; }
+  80% { background-color: #001e57; }
+  100% { background-color: #e74c3c; }
+}
+@keyframes bg-color {
+  0% { background-color: #ffae95; }
+  20% { background-color: #a9f5ff; }
+  40% { background-color:#89d0ff; }
+  60% { background-color: #3498db; }
+  80% { background-color: #001e57; }
+  100% { background-color: #e74c3c; }
+}
+
+.left-and-right-handed-drawing {
+  padding: 0px;
+}
+
+.left-and-right-handed-drawing p {
+  display: inline-block;
+  margin: auto 35px;
+  float: left;
+
+  position: relative;
+  top: 6rem;
+  left: -7rem;
+}
+.left-and-right-handed-drawing img {
+  display: inline-block;
+  margin: auto 35px;
+  float: right;
+  
+  position: relative;
+  bottom: 3rem;
+  right: 6rem;
+  transition: all 300ms 0s ease-in;
+}
+.left-and-right-handed-drawing:hover img {
+  width: 20em;
+}
+.left-and-right-handed-drawing li {
+  margin: 0 auto;
+  text-align: center;
+  width: 63em;
+  height: 18em;
+  border: solid 0px #000000;
+  background-color:rgb(221, 221, 221);
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.07);
+
+  position:relative;
+}
+
+.board ul {
+  display: inline-block;
+}
+
+.board li {
+  width: 500px;
+  background: rgb(230, 230, 230);
+  margin: 5px 2px;
+  align-items: center;
+  position: relative;
+  right: 20px;
+  border-radius: 20px / 20px;
+  display: inline-grid;
+}
+
+.board p {
+  color: black;
+  margin: auto;
+}
+
+.board img {
+  transition: all 200ms 0s ease;
+  cursor: pointer; 
+}
+
+.board img:active {
+  transform: rotateY(180deg);
+}
+
+li-title {
+  font-size: 1.5rem;
+  color: #ffffff;
+  background: #0b64d8;
+  display: block;
+  transition: all 200ms 0s ease-in;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.left-picture {
+  float: left;
+  position: absolute;
+  left: 10rem;
+}
+.left-aligned {
+  text-align: left;
+}
+
+chapter {
+  position: absolute;
+  margin-left: -12rem;
+  transition: all 280ms 0s ease-in;
+  color: green;
+}
+chapter:hover {
+  color: rgb(24, 194, 24);
+}
+
+.font-cursive {
+  font-family: cursive;
+}
+.font-arialblack {
+  font-family: arial black;
+}
+
+address a:hover {
+  background-color: #3a4ad625;
+}
+a.link:hover {
+  background-color: #3a4ad625;
+}
+
+a.btn {
+  color: rgb(255, 255, 255);
+  background-color: #62c5ff;
+  border-bottom: 5px solid #3d9cf5;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+  text-decoration:none;
+  padding: 4px 20px;
+  border-radius: 24px / 24px;
+  transition: all 200ms 0s ease-out;
+  font-size: 1rem;
+}
+a.btn:hover {
+  margin-top: 3px;
+  color: rgb(225, 243, 255);
+  background: #00c3ff;
+  border-bottom: 2px solid #9b9b9b;
+}
+a.btn:active {
+  margin-top: 3px;
+  color: rgb(225, 243, 255);
+  background: #00d9ff;
+  border-bottom: 2px solid #9b9b9b;
+}
+@media only screen and (min-width:600px) {
+  a.btn {
+    font-size: 5px;
+  }
+}
+@media only screen and (min-width:1800px) {
+  a.btn {
+    font-size: 18px;
+  }
+}
+
+a.btn2 {
+  color: rgb(255, 255, 255);
+  background-color: #4e4e4e;
+  border-bottom: 5px solid #000000;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+  text-decoration:none;
+  transition: all 300ms 0s ease-out;
+  padding: 0px 12px;
+  border-radius: 10px 10px;
+}
+a.btn2--black:hover {
+  margin-top: 3px;
+  color: rgba(51, 51, 51, 0.349);
+  background: #ffffff;
+  border-bottom: 2px solid #9b9b9b;
+}
+
+a.button {
+  color: #fff;
+  text-decoration:none;
+  transition: all 300ms 0s ease-out
+}
+a.button:hover {
+  color: rgb(156 156 156);
+  background: #ececec;
+  float: none;
+  border-radius: 15px 15px;
+}
+a.button.black {
+  color: rgb(151, 151, 151);
+  background: #2c2c2c;
+  border-radius: 0px 0px 15px 15px;
+}
+a.button.black:hover {
+  background: #000000;
+  color: white;
+  font-size: 1.2em;
+  padding: 5px;
+}
+
+.copy-right {
+  text-decoration:none;
+  color: rgb(131, 131, 131);
+  position: relative;
+  left: 5px;
+  transition: all 300ms 0s ease;
+}
+.copy-right:hover {
+  color: #c0c0c0;
+  position: relative;
+  bottom: 2px;
+}
+
+.hidden {
+  align-items: auto;
+  color: rgba(255, 255, 255, 0);
+  transition: all 300ms 0s ease;
+}
+
+/** ボタン **/
+.disp-box label {
+  display: inline-block;
+  color: #bebebe;                   /* ボタンの文字色 */
+  background-color: #525252;        /* ボタンの背景色 */
+  font-weight: bold;                /* 文字の太さ */
+  padding: 0.5em 1em;               /* ボタン内側の余白 */
+  border-bottom: solid 4px #3b3b3b; /* ボタンの影部分 */
+  border-radius: 24px / 23px;               /* 角丸 */
+  cursor: pointer;                  /* ボタンにカーソルを合わせた時に指アイコンを表示 */
+}
+/** ボタンクリック時のボタンを押し込む動作 **/
+.disp-box label:active {
+  -webkit-transform: translateY(4px); /* Chrome、Safari用 */
+  -moz-transform: translateY(4px);    /* Firefox用 */
+  -ms-transform: translateY(4px);     /* IE用 */
+  transform: translateY(4px);
+  border-bottom: none;
+}
+/** チェックボックス **/
+.disp-box input {
+  display: none; /* 非表示 */
+}
+/** 表示・非表示を切り替えるテキスト（「クリックされました！」の部分） **/
+.disp-box .text {
+  color: #e2242a;    /* 文字色 */
+  font-weight: bold; /* 文字の太さ */
+  overflow: hidden;
+  opacity: 0;        /* 文字を非表示 */
+  transition: 0.2s;  /* 文字が表示・非表示される時のスピード */
+}
+/** チェックボックスにチェックが入った時の、テキストの処理 **/
+.disp-box input:checked ~ .text {
+  height: auto;
+  opacity: 1; /* 文字を表示 */
+}
