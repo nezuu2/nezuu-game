@@ -1,6 +1,6 @@
 // 画面サイズ
-const SCREEN_W = 180;
-const SCREEN_H = 320;
+const SCREEN_W = 500;
+const SCREEN_H = 500;
 
 // キャンバスサイズ
 const CANVANS_W = SCREEN_W *2;
@@ -8,7 +8,7 @@ const CANVANS_H = SCREEN_W *2;
 
 // フィールドサイズ
 const FIELD_W = SCREEN_W *2;
-const FIELD_W = SCREEN_H *2;
+const FIELD_H = SCREEN_H *2;
 
 function rand(min,max)
 {
@@ -23,6 +23,10 @@ let can = document.getElementById("can");
 let con = can.getContext("2d");
 can.width = CANVAS_W;
 can.height = CANVAS_H;
+
+ctx.strokeRect(0,0,80,80);
+
+document.body.appendChild(can);
 
 // 星クラス
 class Star

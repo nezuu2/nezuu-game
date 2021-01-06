@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="stylesheet.css">
     <link rel="icon" type="image/png" href="icon.png">
     <script src="library/jquery-3.5.1.min.js"></script>
-    <script src="main.js"></script>
+    <!--<script src="main.js"></script>-->
 </head>
     
 <body>
@@ -19,17 +19,15 @@
     <nav>
         <ul>
           <li><a href="index.html" class="menu-active tabs-button">ホーム</a></li>
-          <li><a href="index.html" class="menu-active tabs-button">作者について</a></li>
+          <li><a href="javascript:alert('現在開発中のためご閲覧いただけません。\n申し訳ありませんが、後日ご確認いただけるとありがたいです。')" class="menu-active tabs-button">作者について</a></li>
         </ul>
     </nav>
 
     <div class="main">
       <br>
       <canvas id="can"></canvas>
-      <br>
-      <br>
-      <br>
-      <p id="check-jquery">JQueryが導入されていません。</p>
+      <p id='ver'>Game version: 0.0.1</p>
     </div>
+    <script src="test.js"></script>
 </body>
 </html>
